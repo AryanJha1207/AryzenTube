@@ -1,0 +1,207 @@
+.videoGrid {
+    padding: 20px;
+  }
+  
+  .categories {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0 20px 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 20px;
+  }
+  
+  .category-btn {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #0f0f0f;
+    transition: all 0.2s;
+  }
+  
+  .app.dark-mode .category-btn {
+    background-color: #303030;
+    color: white;
+  }
+  
+  .category-btn:hover {
+    background-color: #e5e5e5;
+  }
+  
+  .app.dark-mode .category-btn:hover {
+    background-color: #404040;
+  }
+  
+  .category-btn.active {
+    background-color: #0f0f0f;
+    color: white;
+  }
+  
+  .app.dark-mode .category-btn.active {
+    background-color: white;
+    color: #0f0f0f;
+  }
+  
+  .mobile-search {
+    display: none;
+    margin-bottom: 20px;
+  }
+  
+  .mobile-search-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .app.dark-mode .mobile-search-input {
+    background-color: #303030;
+    border-color: #404040;
+    color: white;
+  }
+  
+  .videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px 20px;
+  }
+  
+  .videoCard {
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .videoCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .videoCard__thumbnail {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    aspect-ratio: 16/9;
+    background-color: #f2f2f2;
+  }
+  
+  .app.dark-mode .videoCard__thumbnail {
+    background-color: #303030;
+  }
+  
+  .videoCard__thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .videoCard:hover .videoCard__thumbnail img {
+    transform: scale(1.05);
+  }
+  
+  .videoCard__duration {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .videoCard__info {
+    display: flex;
+    gap: 12px;
+    padding-right: 20px;
+  }
+  
+  .videoCard__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .videoCard__text h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    color: #0f0f0f;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .app.dark-mode .videoCard__text h4 {
+    color: white;
+  }
+  
+  .videoCard__text p {
+    font-size: 14px;
+    color: #606060;
+    margin-bottom: 4px;
+  }
+  
+  .app.dark-mode .videoCard__text p {
+    color: #aaa;
+  }
+  
+  .no-videos {
+    text-align: center;
+    padding: 60px 20px;
+    color: #606060;
+  }
+  
+  .app.dark-mode .no-videos {
+    color: #aaa;
+  }
+  
+  .no-videos h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .no-videos p {
+    font-size: 16px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .videoGrid {
+      padding: 10px;
+    }
+    
+    .categories {
+      gap: 8px;
+      padding: 5px 0 15px 0;
+    }
+    
+    .category-btn {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+    
+    .mobile-search {
+      display: block;
+    }
+    
+    .videos {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 30px 10px;
+    }
+    
+    .videoCard__text h4 {
+      font-size: 14px;
+    }
+    
+    .videoCard__text p {
+      font-size: 12px;
+    }
+  }

@@ -1,0 +1,9 @@
+
+{
+  "name": "GeminiTube",
+  "description": "A high-fidelity YouTube clone with AI-powered video discovery, featuring a responsive video grid, category filtering, search functionality, and a dedicated video player experience using the Gemini API.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
