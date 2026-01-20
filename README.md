@@ -1,70 +1,148 @@
-# Getting Started with Create React App
+# AryzenTube 🎬
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A smarter YouTube clone built with React that focuses on better learning experiences.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+### 🎨 Better Design
+- **AMOLED Dark Theme** - Easy on eyes during long study sessions
+- **Cleaner Layout** - Simple and organized interface
+- **Better Fonts** - Improved readability
 
-### `npm start`
+### 🧠 Learning Lab (Main Feature)
+Stop wasting time searching for the right tutorial. Learning Lab creates personalized learning paths:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Choose what to learn** - React, Python, Web Development, etc.
+2. **Select your language** - Hindi, English, or others
+3. **Set your daily time** - 30 minutes, 1 hour, etc.
+4. **Pick your timeline** - 2 weeks, 1 month, etc.
+5. **Select your level** - Beginner, Intermediate, or Advanced
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The system then creates a daily learning plan with the best videos for your needs.
 
-### `npm test`
+### 🔧 Other Features
+- **Dark/Light Mode Toggle**
+- **Responsive Design** - Works on mobile, tablet, and desktop
+- **Video Categories** - Easy filtering by topic
+- **YouTube-like Interface** - Familiar but improved
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 How to Run
 
-### `npm run build`
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/aryzentube.git
+   cd aryzentube
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Open your browser**
+   Go to `http://localhost:3000`
 
-### `npm run eject`
+## 📁 Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+aryzentube/
+├── src/
+│   ├── components/
+│   │   ├── Header.js
+│   │   ├── Sidebar.js
+│   │   ├── VideoGrid.js
+│   │   └── VideoPlayer.js
+│   ├── data/
+│   │   └── mockData.js
+│   ├── styles/
+│   │   ├── App.css
+│   │   ├── Header.css
+│   │   ├── Sidebar.css
+│   │   ├── VideoGrid.css
+│   │   └── VideoPlayer.css
+│   ├── App.js
+│   └── index.js
+├── public/
+└── package.json
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠️ Technologies Used
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **React** - Frontend framework
+- **React Router** - Page navigation
+- **Material-UI** - Icons and components
+- **CSS3** - Styling and animations
+- **Local Storage** - Save user preferences
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🎯 Problem Solved
 
-## Learn More
+YouTube has millions of educational videos, but:
+- Hard to find the right one for your level
+- No structure or learning path
+- Videos might be in wrong language
+- Time wasted searching instead of learning
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+AryzenTube fixes this by creating personalized learning journeys.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📱 How to Use
 
-### Code Splitting
+1. **Browse videos** like normal YouTube
+2. **Click "Learning Lab"** in the header
+3. **Fill your preferences** - what, how, and when to learn
+4. **Get your plan** - daily video schedule
+5. **Follow along** - one click to each day's video
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🎨 Customization
 
-### Analyzing the Bundle Size
+You can easily customize:
+- Colors in `src/styles/App.css`
+- Mock videos in `src/data/mockData.js`
+- Learning paths logic in components
+- Add more languages or skills
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🤝 Contributing
 
-### Making a Progressive Web App
+Feel free to fork this project and:
+- Add more features
+- Improve the design
+- Add real YouTube API integration
+- Create more learning paths
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📄 License
 
-### Advanced Configuration
+This project is open source and available for educational purposes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🐛 Known Issues
 
-### Deployment
+- Uses mock data (no real YouTube API)
+- Basic learning path algorithm
+- Limited to demo videos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🚀 Future Improvements
 
-### `npm run build` fails to minify
+- [ ] Real YouTube API integration
+- [ ] More languages support
+- [ ] User accounts and progress tracking
+- [ ] Community learning paths
+- [ ] Video download option
+- [ ] Quiz system for each video
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 💡 Why I Built This
+
+As a student, I wasted hours jumping between tutorials. I wanted to create a tool that helps people learn efficiently without the frustration of searching.
+
+## 👤 Author
+
+**ARYZEN NEX**
+- Built during a 3-hour hackathon
+- Focus on solving real learning problems
+- Simple and effective design
+
+---
+
+AryzenTube made with ❤️ by ARYZEN NEX 👾
